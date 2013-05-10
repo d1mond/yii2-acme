@@ -1,1 +1,17 @@
-.idea
+# phpstorm project
+/.idea/
+
+# local configuration files
+/common/config/*-local.php
+/console/config/*-local.php
+/backend/config/*-local.php
+/frontend/config/*-local.php
+
+# runtime directories
+/console/runtime/
+/backend/runtime/
+/frontend/runtime/
+
+# assets directories
+/backend/www/assets/
+/frontend/www/assets/
