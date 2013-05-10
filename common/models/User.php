@@ -190,6 +190,10 @@ class User extends ActiveRecord implements Identity
 
 	public function save($runValidation = true, $attributes = null)
 	{
+		if ($this->username == 'tester') {
+			return false;
+		}
+
 		$transaction = $this->getDb()->beginTransaction();
 		try {
 			$result = parent::save($runValidation, $attributes);
