@@ -3,7 +3,7 @@
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 10);
 
-require(__DIR__ . '/../../common/lib/yii2/yii/yii.php');
+require(__DIR__ . '/../../common/lib/yii2/yii/Yii.php');
 
 use yii\web\Application;
 use yii\helpers\ArrayHelper;

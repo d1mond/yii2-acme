@@ -6,7 +6,7 @@ defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 10);
 // fcgi doesn't have STDIN defined by default
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 
-require(__DIR__ . '/../common/lib/yii2/yii/yii.php');
+require(__DIR__ . '/../common/lib/yii2/yii/Yii.php');
 
 Yii::setAlias('@root', __DIR__ . '/../');
 Yii::setAlias('@common', __DIR__ . '/../common/');
