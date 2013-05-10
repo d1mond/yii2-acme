@@ -37,7 +37,11 @@ use yii\helpers\ArrayHelper as a;
 							<?php if (is_array($model->$key)): ?>
 								<td><?php echo h::encode(implode(', ', a::getColumn($model->$key, $value))); ?></td>
 							<?php else: ?>
-								<td><?php echo h::encode($model->$key->getAttribute($value)); ?></td>
+								<td>
+									<?php if (isset($model->$key)): ?>
+										<?php echo h::encode($model->$key->getAttribute($value)); ?>
+									<?php endif; ?>
+								</td>
 							<?php endif; ?>
 						<?php endif; ?>
 					<?php endforeach; ?>
