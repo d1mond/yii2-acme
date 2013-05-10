@@ -111,6 +111,19 @@ class User extends ActiveRecord implements Identity
 		return true;
 	}
 
+	public function beforeDelete()
+	{
+		if (!parent::beforeDelete()) {
+			return false;
+		}
+
+		if ($this->username == 'tester') {
+			return false;
+		}
+
+		return true;
+	}
+
 	public function afterSave($insert)
 	{
 		parent::afterSave($insert);
