@@ -143,4 +143,9 @@ class Post extends ActiveRecord
 		}
 		return $this->_url;
 	}
+
+	public static function tableName()
+	{
+		return '{{%post}}';
+	}
 }

@@ -275,4 +275,9 @@ class User extends ActiveRecord implements Identity
 			$this->addError('password', 'Incorrect username or password.');
 		}
 	}
+
+	public static function tableName()
+	{
+		return '{{%user}}';
+	}
 }
