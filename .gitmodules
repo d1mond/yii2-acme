@@ -1,0 +1,3 @@
+[submodule "common/lib/yii2"]
+	path = common/lib/yii2
+	url = git://github.com/yiisoft/yii2.git
